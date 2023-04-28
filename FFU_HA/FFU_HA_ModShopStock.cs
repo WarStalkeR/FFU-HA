@@ -26,6 +26,7 @@ namespace FFU_Horror_Abyss {
                 foreach (SpatialItemData item in __result) ModLog.Message($"Type: {item.itemType}, Subtype: {item.itemSubtype}, ID: {item.id}, Name: {item.itemNameKey.GetLocalizedString()}, Instance: {item.GetInstanceID()}");
             }
             if (__result.Find(x => x.id == "metal")) {
+                ModLog.Warning($"Shop item list updated!");
                 var refLumber = FFU_HA_Defs.refItemList.Find(x => x.id == "lumber");
                 var refScrap = FFU_HA_Defs.refItemList.Find(x => x.id == "scrap");
                 var refCloth = FFU_HA_Defs.refItemList.Find(x => x.id == "cloth");
