@@ -15,15 +15,15 @@ namespace FFU_Horror_Abyss {
             ModLog.Warning($"{FFU_HA_Defs.modName} v{FFU_HA_Defs.modVersion} configuration is loaded!");
             if (FFU_HA_Defs.modInfiniteResearch.Value) {
                 Harmony.CreateAndPatchAll(typeof(FFU_HA_ModResearch));
-                ModLog.Warning($"Mod submodule 'InfiniteResearch' is loaded and applied!");
+                ModLog.Warning($"Submodule 'InfiniteResearch' is loaded and applied!");
             }
             if (FFU_HA_Defs.modBoostedAbilities.Value) {
                 Harmony.CreateAndPatchAll(typeof(FFU_HA_ModAbilities));
-                ModLog.Warning($"Mod submodule 'BoostedAbilities' is loaded and applied!");
+                ModLog.Warning($"Submodule 'BoostedAbilities' is loaded and applied!");
             }
             if (FFU_HA_Defs.modBiggerShopStock.Value) {
                 Harmony.CreateAndPatchAll(typeof(FFU_HA_ModShopStock));
-                ModLog.Warning($"Mod submodule 'BiggerShopStock' is loaded and applied!");
+                ModLog.Warning($"Submodule 'BiggerShopStock' is loaded and applied!");
             }
             ModLog.Warning($"{FFU_HA_Defs.modName} v{FFU_HA_Defs.modVersion} submodules are loaded!");
         }
