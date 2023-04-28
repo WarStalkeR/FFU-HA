@@ -6,7 +6,7 @@ using HarmonyLib;
 namespace FFU_Horror_Abyss {
     class FFU_HA_ModAbilities {
 		[HarmonyPatch(typeof(AbilityBarUI), "CheckAbilityCooldown"), HarmonyPrefix]
-		public static bool CheckAbilityCooldown_ReduceCooldown(AbilityBarUI __instance, bool refresh) {
+		static bool CheckAbilityCooldown_ReduceCooldown(AbilityBarUI __instance, bool refresh) {
 			AbilityData currentAbilityData = (AbilityData)AccessTools.Field(typeof(AbilityBarUI), "currentAbilityData").GetValue(__instance);
 			//ModLog.Message($"Current ability {currentAbilityData.name} has cooldown of {currentAbilityData.cooldown} and duration of {currentAbilityData.duration}");
 			switch (currentAbilityData.name) {

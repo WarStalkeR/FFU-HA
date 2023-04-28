@@ -81,6 +81,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="Unity.Localization, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\DREDGE_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
@@ -93,6 +94,7 @@
     <Compile Include="FFU_HA_Defs.cs" />
     <Compile Include="FFU_HA_ModAbilities.cs" />
     <Compile Include="FFU_HA_ModResearch.cs" />
+    <Compile Include="FFU_HA_ModShopStock.cs" />
     <Compile Include="Helpers\IniFile.cs" />
     <Compile Include="Helpers\ModLog.cs" />
     <Compile Include="Helpers\WordWrap.cs" />
