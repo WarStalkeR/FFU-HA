@@ -14,7 +14,7 @@ namespace FFU_Horror_Abyss {
         public static ConfigEntry<bool> modBiggerShopStock;
         public static ConfigEntry<bool> debugListAllItems;
         public static ConfigEntry<bool> debugListShopItems;
-        public static List<SpatialItemData> refItemList = null;
+        public static ItemManager refItemManager = null;
         public static void InitCfg() {
             modDefsCfg = new ConfigFile(Path.Combine(Paths.ConfigPath, "mod_FFU_HA_Defs.cfg"), true);
             modInfiniteResearch = modDefsCfg.Bind("InfiniteResearch", "Enabled", true, "Allows you to research stuff indefinitely, as long as you have at least one research part.");

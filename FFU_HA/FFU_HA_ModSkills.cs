@@ -4,7 +4,7 @@
 using HarmonyLib;
 
 namespace FFU_Horror_Abyss {
-    class FFU_HA_ModAbilities {
+    class FFU_HA_ModSkills {
 		[HarmonyPatch(typeof(AbilityBarUI), "CheckAbilityCooldown"), HarmonyPrefix]
 		static bool CheckAbilityCooldown_ReduceCooldown(AbilityBarUI __instance, bool refresh) {
 			AbilityData currentAbilityData = (AbilityData)AccessTools.Field(typeof(AbilityBarUI), "currentAbilityData").GetValue(__instance);
